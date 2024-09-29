@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Titre de la page -->
+    <h1>NoPunks creation tool</h1> <!-- Titre ajouté ici -->
+
+    <!-- Conteneur des menus -->
+    <div class="menu-container">
+
+        <!-- Menu pour type -->
+        <div class="dropdown">
+            <button class="dropbtn">Type</button>
+            <div class="dropdown-content" id="typeMenu">
+                <div class="menu-item" data-value="male">
+                    <img src="images/type/male.png" alt="male"> Male
+                </div>
+                <div class="menu-item" data-value="female">
+                    <img src="images/type/female.png" alt="female"> Female
+                </div>
+                <div class="menu-item" data-value="zombie">
+                    <img src="images/type/zombie.png" alt="zombie"> Zombie
+                </div>
+                <div class="menu-item" data-value="ape">
+                    <img src="images/type/ape.png" alt="ape"> Ape
+                </div>
+                <div class="menu-item" data-value="alien">
+                    <img src="images/type/alien.png" alt="alien"> Alien
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu pour Type -->
+        <div class="dropdown">
+            <button class="dropbtn">Type</button>
+            <div class="dropdown-content" id="typeMenu">
+                <div class="menu-item" data-value="type1">
+                    <img src="images/types/type1.png" alt="Type 1"> Type 1
+                </div>
+                <div class="menu-item" data-value="type2">
+                    <img src="images/types/type2.png" alt="Type 2"> Type 2
+                </div>
+                <div class="menu-item" data-value="type3">
+                    <img src="images/types/type3.png" alt="Type 3"> Type 3
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu pour Glasses -->
+        <div class="dropdown">
+            <button class="dropbtn">Glasses</button>
+            <div class="dropdown-content" id="glassesMenu">
+                <div class="menu-item" data-value="glasses1">
+                    <img src="images/glasses/glasses1.png" alt="Glasses 1"> Glasses 1
+                </div>
+                <div class="menu-item" data-value="glasses2">
+                    <img src="images/glasses/glasses2.png" alt="Glasses 2"> Glasses 2
+                </div>
+                <div class="menu-item" data-value="glasses3">
+                    <img src="images/glasses/glasses3.png" alt="Glasses 3"> Glasses 3
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu pour Hair -->
+        <div class="dropdown">
+            <button class="dropbtn">Hair</button>
+            <div class="dropdown-content" id="hairMenu">
+                <div class="menu-item" data-value="hair1">
+                    <img src="images/hair/hair1.png" alt="Hair 1"> Hair 1
+                </div>
+                <div class="menu-item" data-value="hair2">
+                    <img src="images/hair/hair2.png" alt="Hair 2"> Hair 2
+                </div>
+                <div class="menu-item" data-value="hair3">
+                    <img src="images/hair/hair3.png" alt="Hair 3"> Hair 3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Canvas pour afficher le personnage -->
+    <canvas id="characterCanvas" width="520" height="520"></canvas>
+
+    <!-- Bouton de téléchargement -->
+    <button id="randomizeBtn">Randomized</button>
+    <button id="downloadBtn">Download</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

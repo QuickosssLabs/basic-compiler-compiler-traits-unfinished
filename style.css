@@ -1,0 +1,123 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Remplace Arial par la nouvelle police */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2e2e2e;
+}
+
+/* Style pour le titre */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+    color: white;
+}
+
+/* Alignement des menus côte à côte */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour les boutons du menu */
+.dropdown {
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #181736;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3f3d8a;
+    font-size: 8px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .menu-item {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    transition: font-size 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-content .menu-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.dropdown-content .menu-item:hover {
+    background-color: #5551be;
+    font-size: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #272557;
+}
+
+/* Centrer l'image dans le canvas */
+canvas {
+    margin-top: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#randomizeBtn {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #181736;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#randomizeBtn:hover {
+    background-color: #272557;
+}
+
+/* Style pour le bouton de téléchargement */
+#downloadBtn {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #181736;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#downloadBtn:hover {
+    background-color: #272557;
+}
+
